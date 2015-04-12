@@ -1,5 +1,14 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="multimedia_playwav" id="58" x="60" y="116">
-    <field name="WAV">pacman_w.wav</field>
+  <block type="controls_repeat" id="99" inline="true" x="17" y="85">
+    <value name="TIMES">
+      <block type="math_number" id="106">
+        <field name="NUM">99999999</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="multimedia_playwav" id="58">
+        <field name="WAV">pacman_w.wav</field>
+      </block>
+    </statement>
   </block>
 </xml>

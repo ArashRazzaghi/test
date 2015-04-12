@@ -7,7 +7,7 @@
     </value>
     <statement name="DO">
       <block type="multimedia_playwav" id="3">
-        <field name="WAV">pacman_w.wav</field>
+        <field name="WAV">laser_w.wav</field>
       </block>
     </statement>
   </block>

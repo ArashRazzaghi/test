@@ -1,29 +1,49 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="oled_cleardisplay" id="9" x="40" y="61">
     <next>
-      <block type="controls_if" id="27" inline="false">
-        <value name="IF0">
-          <block type="sensor_button" id="37">
-            <field name="OBJECT">ENTER</field>
+      <block type="controls_whileUntil" id="47" inline="false">
+        <field name="MODE">WHILE</field>
+        <value name="NUMBER">
+          <block type="math_shift" id="86" inline="true">
+            <field name="OP">LEFT</field>
+            <value name="A">
+              <block type="math_number" id="93">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="100">
+                <field name="NUM">1</field>
+              </block>
+            </value>
           </block>
         </value>
-        <statement name="DO0">
-          <block type="oled_setcursor" id="10" inline="true">
-            <value name="STARTX">
-              <block type="math_number" id="11">
-                <field name="NUM">10</field>
+        <statement name="DO">
+          <block type="controls_if" id="27" inline="false">
+            <value name="IF0">
+              <block type="sensor_button" id="37">
+                <field name="OBJECT">ENTER</field>
               </block>
             </value>
-            <value name="STARTY">
-              <block type="math_number" id="12">
-                <field name="NUM">10</field>
+            <statement name="DO0">
+              <block type="oled_setcursor" id="10" inline="true">
+                <value name="STARTX">
+                  <block type="math_number" id="11">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+                <value name="STARTY">
+                  <block type="math_number" id="12">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="oled_drawtext" id="13">
+                    <field name="TEXT">OWWWW!</field>
+                  </block>
+                </next>
               </block>
-            </value>
-            <next>
-              <block type="oled_drawtext" id="13">
-                <field name="TEXT">OWWWW!</field>
-              </block>
-            </next>
+            </statement>
           </block>
         </statement>
       </block>

@@ -3,31 +3,27 @@
     <field name="MODE">WHILE</field>
     <value name="NUMBER">
       <block type="sensor_button" id="2">
-        <field name="OBJECT">ENTER</field>
+        <field name="OBJECT">UP</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="oled_cleardisplay" id="3">
-        <next>
-          <block type="oled_drawtext" id="4">
-            <field name="TEXT">OWWWW!</field>
-            <next>
-              <block type="oled_setcursor" id="5" inline="true">
-                <value name="STARTX">
-                  <block type="math_number" id="6">
-                    <field name="NUM">10</field>
-                  </block>
-                </value>
-                <value name="STARTY">
-                  <block type="math_number" id="7">
-                    <field name="NUM">10</field>
-                  </block>
-                </value>
-              </block>
-            </next>
-          </block>
-        </next>
-      </block>
+      <block type="movement_forward" id="18"></block>
     </statement>
+  </block>
+  <block type="oled_cleardisplay" id="3" x="144" y="134"></block>
+  <block type="oled_drawtext" id="4" x="297" y="140">
+    <field name="TEXT">OWWWW!</field>
+  </block>
+  <block type="oled_setcursor" id="5" inline="true" x="178" y="201">
+    <value name="STARTX">
+      <block type="math_number" id="6">
+        <field name="NUM">10</field>
+      </block>
+    </value>
+    <value name="STARTY">
+      <block type="math_number" id="7">
+        <field name="NUM">10</field>
+      </block>
+    </value>
   </block>
 </xml>

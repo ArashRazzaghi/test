@@ -7,8 +7,7 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="oled_drawtext" id="4">
-        <field name="TEXT">OWWWW!</field>
+      <block type="oled_cleardisplay" id="28">
         <next>
           <block type="oled_setcursor" id="5" inline="true">
             <value name="STARTX">
@@ -21,6 +20,11 @@
                 <field name="NUM">10</field>
               </block>
             </value>
+            <next>
+              <block type="oled_drawtext" id="4">
+                <field name="TEXT">OWWWW!</field>
+              </block>
+            </next>
           </block>
         </next>
       </block>

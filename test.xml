@@ -1,14 +1,3 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="1" inline="true" x="17" y="85">
-    <value name="TIMES">
-      <block type="math_number" id="2">
-        <field name="NUM">99999999</field>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="multimedia_playwav" id="3">
-        <field name="WAV">lasergun_w.wav</field>
-      </block>
-    </statement>
-  </block>
+  <block type="movement_forward" id="13" x="109" y="85"></block>
 </xml>

@@ -17,21 +17,21 @@
               </block>
             </value>
             <statement name="DO0">
-              <block type="movement_forward" id="40">
+              <block type="movement_forward" id="6">
                 <next>
-                  <block type="oled_setcursor" id="6" inline="true">
+                  <block type="oled_setcursor" id="7" inline="true">
                     <value name="STARTX">
-                      <block type="math_number" id="7">
-                        <field name="NUM">10</field>
-                      </block>
-                    </value>
-                    <value name="STARTY">
                       <block type="math_number" id="8">
                         <field name="NUM">10</field>
                       </block>
                     </value>
+                    <value name="STARTY">
+                      <block type="math_number" id="9">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
                     <next>
-                      <block type="oled_drawtext" id="9">
+                      <block type="oled_drawtext" id="10">
                         <field name="TEXT">OWWWW!</field>
                       </block>
                     </next>
@@ -40,28 +40,28 @@
               </block>
             </statement>
             <statement name="ELSE">
-              <block type="oled_setcursor" id="10" inline="true">
+              <block type="oled_setcursor" id="11" inline="true">
                 <value name="STARTX">
-                  <block type="math_number" id="11">
-                    <field name="NUM">10</field>
-                  </block>
-                </value>
-                <value name="STARTY">
                   <block type="math_number" id="12">
                     <field name="NUM">10</field>
                   </block>
                 </value>
+                <value name="STARTY">
+                  <block type="math_number" id="13">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
                 <next>
-                  <block type="oled_drawtext" id="13">
+                  <block type="oled_drawtext" id="14">
                     <field name="TEXT">tatatatatat</field>
                   </block>
                 </next>
               </block>
             </statement>
             <next>
-              <block type="robot_delay" id="14" inline="true">
+              <block type="robot_delay" id="15" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="15">
+                  <block type="math_number" id="16">
                     <field name="NUM">200</field>
                   </block>
                 </value>

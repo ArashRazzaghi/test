@@ -2,7 +2,13 @@
   <block type="expansion_servopower" id="57" x="92" y="38">
     <field name="SERVO">ON</field>
     <next>
-      <block type="expansion_elevation" id="35" inline="true"></block>
+      <block type="expansion_elevation" id="35" inline="true">
+        <value name="NUMBER">
+          <block type="math_number" id="87">
+            <field name="NUM">15</field>
+          </block>
+        </value>
+      </block>
     </next>
   </block>
 </xml>

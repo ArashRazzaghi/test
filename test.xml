@@ -59,17 +59,4 @@
       </block>
     </next>
   </block>
-  <block type="math_shift" id="242" inline="true" x="84" y="403">
-    <field name="OP">RIGHT</field>
-    <value name="A">
-      <block type="math_number" id="249">
-        <field name="NUM">0</field>
-      </block>
-    </value>
-    <value name="B">
-      <block type="math_number" id="250">
-        <field name="NUM">1</field>
-      </block>
-    </value>
-  </block>
 </xml>

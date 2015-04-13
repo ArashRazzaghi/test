@@ -1,59 +1,49 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="oled_cleardisplay" id="9" x="40" y="61">
     <next>
-      <block type="controls_whileUntil" id="219" inline="false">
-        <field name="MODE">WHILE</field>
-        <value name="NUMBER">
-          <block type="sensor_button" id="257">
+      <block type="controls_if" id="27" inline="false">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="sensor_button" id="37">
             <field name="OBJECT">DOWN</field>
           </block>
         </value>
-        <statement name="DO">
-          <block type="controls_if" id="27" inline="false">
-            <mutation else="1"></mutation>
-            <value name="IF0">
-              <block type="sensor_button" id="37">
-                <field name="OBJECT">DOWN</field>
+        <statement name="DO0">
+          <block type="oled_setcursor" id="10" inline="true">
+            <value name="STARTX">
+              <block type="math_number" id="11">
+                <field name="NUM">10</field>
               </block>
             </value>
-            <statement name="DO0">
-              <block type="oled_setcursor" id="10" inline="true">
-                <value name="STARTX">
-                  <block type="math_number" id="11">
-                    <field name="NUM">10</field>
-                  </block>
-                </value>
-                <value name="STARTY">
-                  <block type="math_number" id="12">
-                    <field name="NUM">10</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="oled_drawtext" id="13">
-                    <field name="TEXT">OWWWW!</field>
-                  </block>
-                </next>
+            <value name="STARTY">
+              <block type="math_number" id="12">
+                <field name="NUM">10</field>
               </block>
-            </statement>
-            <statement name="ELSE">
-              <block type="oled_setcursor" id="207" inline="true">
-                <value name="STARTX">
-                  <block type="math_number" id="208">
-                    <field name="NUM">10</field>
-                  </block>
-                </value>
-                <value name="STARTY">
-                  <block type="math_number" id="209">
-                    <field name="NUM">10</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="oled_drawtext" id="206">
-                    <field name="TEXT">tatatatatat</field>
-                  </block>
-                </next>
+            </value>
+            <next>
+              <block type="oled_drawtext" id="13">
+                <field name="TEXT">OWWWW!</field>
               </block>
-            </statement>
+            </next>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="oled_setcursor" id="207" inline="true">
+            <value name="STARTX">
+              <block type="math_number" id="208">
+                <field name="NUM">10</field>
+              </block>
+            </value>
+            <value name="STARTY">
+              <block type="math_number" id="209">
+                <field name="NUM">10</field>
+              </block>
+            </value>
+            <next>
+              <block type="oled_drawtext" id="206">
+                <field name="TEXT">tatatatatat</field>
+              </block>
+            </next>
           </block>
         </statement>
       </block>

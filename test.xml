@@ -4,18 +4,8 @@
       <block type="controls_whileUntil" id="219" inline="false">
         <field name="MODE">WHILE</field>
         <value name="NUMBER">
-          <block type="math_shift" id="242" inline="true">
-            <field name="OP">RIGHT</field>
-            <value name="A">
-              <block type="math_number" id="249">
-                <field name="NUM">0</field>
-              </block>
-            </value>
-            <value name="B">
-              <block type="math_number" id="250">
-                <field name="NUM">1</field>
-              </block>
-            </value>
+          <block type="sensor_button" id="257">
+            <field name="OBJECT">DOWN</field>
           </block>
         </value>
         <statement name="DO">
@@ -68,5 +58,18 @@
         </statement>
       </block>
     </next>
+  </block>
+  <block type="math_shift" id="242" inline="true" x="84" y="403">
+    <field name="OP">RIGHT</field>
+    <value name="A">
+      <block type="math_number" id="249">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+    <value name="B">
+      <block type="math_number" id="250">
+        <field name="NUM">1</field>
+      </block>
+    </value>
   </block>
 </xml>

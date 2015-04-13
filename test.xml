@@ -5,7 +5,7 @@
         <field name="MODE">WHILE</field>
         <value name="NUMBER">
           <block type="math_shift" id="242" inline="true">
-            <field name="OP">LEFT</field>
+            <field name="OP">RIGHT</field>
             <value name="A">
               <block type="math_number" id="249">
                 <field name="NUM">0</field>
